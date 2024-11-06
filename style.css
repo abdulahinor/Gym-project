@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.btn {
+    cursor: pointer;
+}
+body{
+    font-family: "Roboto", serif;
+}
+.mobile-menu{
+    display: none;
+}
+.hamburger{
+    display: none;
+}
+imag{
+    width: 100%;
+}
+
+video{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    position: absolute;
+    width: 100%;
+    height: calc(100vh);
+    object-fit: cover;
+    z-index: -1;
+}
+
+header{
+    background-color: rgba(250,250,250,0.99) !important;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.container{
+    width: min(90% ,1120px);
+    margin-inline: auto;
+}
+
+
+
+
+.desk-menu{
+    display: flex;
+    justify-content: space-between;
+  align-items: center;
+  /* padding: 0 50px; */
+
+}
+
+.desk-menu ul li{
+  display: inline-block;
+  padding: 0 25px;
+
+    
+}
+
+.desk-menu ul li a{
+    text-decoration: none;
+    align-items: center;
+
+}
+.desk-menu ul li:last-child{
+    margin-right: 0px;
+    
+}
+
+.desk-menu ul li a{
+    text-decoration: none
+}
+/* .desk-menu ul li a.btn:hover{
+    color: red;
+} */
+.desk-menu a:hover {
+    color: red;
+}
+
+
+.hamburger{
+    cursor: pointer;
+    display: none;
+}
+#text{
+    color: red;
+}
+
+.btn{
+    background-color: red;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    margin:20px;
+}
+.desk-menu .btn:hover {
+    color: red;
+}
+
+.desk-menu :nth-last-child(){
+    margin: 0 20px;
+}
+/* logo */
+
+.logo{
+    color: black;
+}
+.desk-menu h1{
+    font-weight: 900;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+/* hero style */
+.hero{
+    height: calc(100vh);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) );
+   display: flex;
+}
+
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+.hero h3 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}
+.sec{
+    width: 40%;
+    padding: 20px;
+}
+/* about */
+.about{
+   margin-bottom: 40px;
+   margin-top: 75px;
+}
+.about-top{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 10px;
+    
+}
+.about-top h1{
+    font-size: 2rem;
+    padding: 10px;
+}
+.about-top p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgb(90, 86, 86);
+    margin-top: 20px;
+}
+
+.about-bottom{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+
+}
+.about-bottom .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.about-bottom .box .box-info{
+    line-height: 25px;
+}
+
+/* middle */
+.midle{
+    margin-bottom: 40px;
+   margin-top: 75px;
+    height: 419px;
+    background: url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg')center;
+} 
+.midle .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.midle-box{
+    margin-top: 100px;
+}
+.midle-box h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+.midle-box p{
+    color: white;
+}
+
+/* Classes */
+.Classes{
+    margin-bottom: 40px;
+   margin-top: 75px;
+}
+.Classes-bottom{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    margin-top: 40px;
+}
+.Classes-bottom .box{
+    margin-bottom: 20px;
+    padding: 27px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.9) 8px 7px 12px;
+    gap: 60px;
+    display: flex;
+}
+.btn-clas{
+    width: 100%;
+    background-color: red;
+    padding: 25px 25px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Schedules */
+.Schedules{
+    height: 1088px;
+    background: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg")center;
+}
+.top.about-top{
+    margin-top: 75px;
+}
+
+.table-infor{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+.table-infor table{
+    width: 900px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    margin-top: 30px;
+
+
+}
+/* Expert */
+
+.Expert-box{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  
+}
+
+.ex-box{   
+    padding: 20px;
+   margin:  20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.9) 8px 8px 12px;
+   line-height: 23px;
+}
+
+.icons i{
+    padding: 5px 10px;
+}
+.Contact{
+margin-top: 60px;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+margin-bottom: 50px;
+}
+
+iframe{
+    width: 700px;
+    height: 550px;
+}
+.Contact-form{
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    background: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg")center;
+}
+
+form{
+    
+    margin-inline: auto;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    padding: 30px;
+}
+form .group{
+    display: flex;
+    gap: 10px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+Subject{
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/* footer */
+footer{
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px;
+}
+
+/* media rsponsive mobile */
+@media (max-width: 1024px){
+    .desk-menu{
+        width: 100%;
+    }
+
+    .Expert-box{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+      
+      
+    }
+    .Expert-box img{
+        width: 100%;
+    }
+    .Classes-bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    .box-info img{
+        width: 100%;
+}
+
+}
+@media (max-width: 768px){
+    .desk-menu ul{
+        display: none;
+    }
+    .logo{
+        margin-top: 20px;
+    }
+    .container{
+        width:80% ;
+    }
+    i {
+        z-index: 1;
+    }
+
+    .mobile-menu{
+        display: flex;
+        
+    }
+
+    .hamburger{
+
+        display: flex;
+        font-size: 35px;
+        position: absolute;
+        right: 10%;
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        top: 20px;
+        border-radius: 50%;
+        background-color: black;
+        color: wheat;
+    }
+    .mobile-menu[data-visible="false"] {
+        transform: translateX(100%);
+    }
+
+    .hamburger i[data-visible="true"]{
+        display: block;
+    }
+
+    .hamburger i[data-visible="false"]{
+        display: none;
+    }
+
+
+    .mobile-menu{
+        
+        display: block;
+        margin: 20px;
+        flex-direction: column;
+        width: 95%;
+        justify-content: center;
+        text-align: center;        
+        
+         
+    }
+    .mobile-menu ul li{
+        display: block;
+        background-color: rgba(250,250,250,0.99);
+        
+    
+    }
+    .mobile-menu a{
+        padding: 20px 0px; 
+        margin: 1px;
+        display: block;
+        color: black;
+        text-decoration: none;
+      
+    }
+    .mobile-menu a:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    .btn{
+        display: inline;
+        width: 96%;
+        
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+        font-weight: 400;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .hero h3 {
+        font-size: 1.6rem;
+        color: white;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    /* about */
+    .about-bottom{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    
+    }
+    /* Classes */
+    .Classes-bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    .box-info img{
+        width: 100%;
+    }
+
+
+    /* Schedules */
+    .table-infor table{
+        width: 100%;
+        height: 700px;
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+        margin-top: 20px;
+    
+    
+    }
+    /* Expert */
+    .Expert-box{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* justify-content: center;
+        width: 100%; */
+      
+    }
+    .Expert-box img{
+        width: 100%;
+    }
+    /* contact */
+    .Contact{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+        }
+      .Contact .map{
+           background-color: aqua;
+           margin-top: 20px;
+        }
+
+        .from{
+            width: 100%;
+        }
+
+        iframe{
+            width: 100%;
+        }
+
+
+}
