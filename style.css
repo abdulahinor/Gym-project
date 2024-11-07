@@ -427,7 +427,8 @@ footer{
         flex-direction: column;
         width: 95%;
         justify-content: center;
-        text-align: center;        
+        text-align: center;   
+        margin-inline: auto;    
         
          
     }
